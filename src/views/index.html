@@ -313,6 +313,11 @@
             z-index: 2; /* Without this left pane prompt overlaps right pane prompt. */
             grid-area: prompt-decoration;
             opacity: 0.5;
+            transition: opacity 200ms ease-in-out;
+        }
+
+        .session .prompt:hover:before {
+            opacity: 1;
         }
 
         .session .prompt[data-mode=normal]:before {
